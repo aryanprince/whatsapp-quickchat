@@ -1,6 +1,8 @@
+import PhoneInputForm from "./phone-input-form";
+
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col bg-black text-white">
+    <div className="flex min-h-screen flex-col">
       <div className="container mx-auto flex flex-1 flex-col justify-center gap-8">
         <div className="text-center">
           <h1 className="text-2xl font-semibold">WhatsApp QuickChat</h1>
@@ -9,10 +11,9 @@ export default function HomePage() {
           </p>
         </div>
         <div className="flex flex-col items-center gap-4">
-          <input type="text" className="w-fit" />
-          <button>Send</button>
+          <PhoneInputForm />
         </div>
       </div>
-    </main>
+    </div>
   );
 }
